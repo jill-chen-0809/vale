@@ -105,6 +105,47 @@
       font-weight: 500;
       font-feature-settings: "tnum";
     }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 14px;
+      background: rgba(0, 210, 255, 0.12);
+      border: 1px solid rgba(0, 210, 255, 0.4);
+      border-radius: 20px;
+      color: #38bdf8;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-download:hover {
+      background: rgba(0, 210, 255, 0.25);
+      border-color: #00d2ff;
+      color: #ffffff;
+      box-shadow: 0 0 14px rgba(0, 210, 255, 0.4);
+      transform: translateY(-1px);
+    }
+    .cover-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #0284c7 0%, #00d2ff 100%);
+      color: #090d16;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 9999px;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(0, 210, 255, 0.35);
+      transition: all 0.25s ease;
+    }
+    .cover-cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 210, 255, 0.55);
+      filter: brightness(1.1);
+    }
     /* Slides Container */
     .slides-wrapper {
       position: relative;
@@ -439,7 +480,17 @@
         <span>YONGTEK</span>
         <span class="brand-tag">OPTICAL FILM SOLUTIONS</span>
       </div>
-      <div class="slide-badge" id="slideIndicator">Slide 1 / 5</div>
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a href="YONGTEK_H_Series_Narrow_Angle_Diffuser_Film_Datasheet_v2.pdf" download="YONGTEK_H_Series_Narrow_Angle_Diffuser_Film_Datasheet_v2.pdf" target="_blank" class="btn-download" title="Download Official PDF Datasheet">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Datasheet (PDF)</span>
+        </a>
+        <div class="slide-badge" id="slideIndicator">Slide 1 / 5</div>
+      </div>
     </div>
 
     <!-- Slides Wrapper -->
@@ -472,6 +523,17 @@
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
               ASTM Optical Compliance
             </div>
+          </div>
+          <div style="margin-top: 24px; display: flex; gap: 14px; align-items: center;">
+            <a href="YONGTEK_H_Series_Narrow_Angle_Diffuser_Film_Datasheet_v2.pdf" download="YONGTEK_H_Series_Narrow_Angle_Diffuser_Film_Datasheet_v2.pdf" target="_blank" class="cover-cta-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Datasheet (PDF)
+            </a>
+            <span style="font-size: 13px; color: var(--text-muted);">Official Technical Datasheet • PDF</span>
           </div>
         </div>
       </div>
@@ -692,8 +754,14 @@
             <div style="font-weight: 700; color: #fff; font-size: 14px; margin-bottom: 2px;">Custom Engineering & Sample Requests</div>
             <div style="font-size: 12px; color: #94a3b8;">Custom substrates (PET / PC / PMMA), thickness options, die-cutting, and project optical verification.</div>
           </div>
-          <div style="font-size: 13px; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.5px;">
-            YONGTEK Co., Ltd. Technical Support
+          <div style="display: flex; gap: 16px; align-items: center;">
+            <a href="YONGTEK_H_Series_Narrow_Angle_Diffuser_Film_Datasheet_v2.pdf" download="YONGTEK_H_Series_Narrow_Angle_Diffuser_Film_Datasheet_v2.pdf" target="_blank" class="btn-download" style="padding: 8px 16px; font-size: 13px;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download PDF Datasheet
+            </a>
+            <div style="font-size: 13px; font-weight: 700; color: var(--accent-cyan); letter-spacing: 0.5px;">
+              YONGTEK Co., Ltd. Technical Support
+            </div>
           </div>
         </div>
       </div>
